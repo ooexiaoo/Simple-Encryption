@@ -20,8 +20,6 @@ height: 350px;
     #inputText, #encryptedText, #decryptedText {
         width: 100%;
         max-width: 100%;
-        height: 350px;
-    }
 }
 
 .oneto {

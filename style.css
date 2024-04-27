@@ -1,21 +1,22 @@
 * {
-    margin: 15px;
-    padding: 15px;
-    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-
+  
 body {
-    background: linear-gradient(45deg, #ff6ac1, #87ceeb);
+    background: linear-gradient(-45deg, #16060f, #f05092);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 h1 {
-    margin: 0px;
-    padding: 0px;
+    margin: 5px;
+    padding: 5px;
     color: #fff;
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: bold;
 }
 
 label {
@@ -24,13 +25,54 @@ label {
     color: #fff;
 }
 
+h2{
+    font-size: 1rem;
+}
+
 #inputText, #encryptedText, #decryptedText {
-    max-width: 550px;
-    width: 80%;
+    max-width: 750px;
+    width: auto;
+    width: 90%;
     height: 400px;
 
     margin: 5px;
     padding: 5px;
+    border-radius: 1rem;
+    border: none;
+}
+#rotation{
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+
+.oneto {
+    color: #fff;
+    margin: 5px;
+    padding: 5px;
+}
+.matter{
+    display: flex;
+    flex-direction: column;
+}
+.mainsection, .encryptsection, .decryptsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+button{
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: black;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -39,9 +81,12 @@ label {
         max-width: 100%;
     }
 }
-
-.oneto {
-    color: #fff;
-    margin: 5px;
-    padding: 5px;
+@media (min-width: 768.1px) {
+    #inputText, #encryptedText, #decryptedText {
+        width: 100%;
+        max-width: 100%;
+    }
+    #inputText, #encryptedText, #decryptedText {
+        width: 750px;
+    }
 }
